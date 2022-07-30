@@ -32,7 +32,7 @@ What is a MAC address?
 What is an IP address?
 1. Is to devices connected to a network what postal address is to houses.
 2. The unique identifier of a network interface.
-3. Is a number that network devices use to connect to networks.
+3. Is a number that network devices use to connect to networks. 
 
 
 3-UDP_and_TCP:

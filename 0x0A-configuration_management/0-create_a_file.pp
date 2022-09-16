@@ -1,9 +1,10 @@
-# Create a file
-file { '/tmp/holberton':
+#!/usr/bin/pup
+# Create an file called 'school' on the dir tmp
+file { 'school':
   ensure  => file,
-  path    => '/tmp/holberton',
-  mode    => '0744',
+  path    => '/tmp/school',
   owner   => 'www-data',
   group   => 'www-data',
+  mode    => '0744',
   content => 'I love Puppet'
 }

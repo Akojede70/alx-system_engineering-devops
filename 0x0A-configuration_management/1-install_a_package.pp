@@ -1,10 +1,6 @@
 #!/usr/bin/pup
-# Create an file called 'school' on the dir tmp
-file { 'school':
-  ensure  => file,
-  path    => '/tmp/school',
-  owner   => 'www-data',
-  group   => 'www-data',
-  mode    => '0744',
-  content => 'I love Puppet'
+# Install an especific version of flask (2.1.0)
+package {'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3'
 }

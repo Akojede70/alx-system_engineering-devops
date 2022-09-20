@@ -1,7 +1,7 @@
 ## 0x0C. Web server
 
 
-0-transfer_file: Writing a Bash script that transfers a file from our client to a server:
+**0-transfer_file:** Writing a Bash script that transfers a file from our client to a server:
 Requirements:
 Accepts 4 parameters.
 The path to the file to be transferred.
@@ -20,7 +20,7 @@ remotely execute the ls ~/ command via ssh to see that the file some_page.html h
 That is one way of publishing your website pages to your server.
 
 
-1-install_nginx_web_server: Readme:
+**1-install_nginx_web_server:** Readme:
 -y on apt-get command.
 Web servers are the piece of software generating and serving HTML pages, let’s install one!.
 Requirements:.
@@ -35,7 +35,7 @@ In this example 34.198.248.145 is the IP of my web-01 server. If you want to que
 If things are not going as expected, make sure to check out Nginx logs, they can be found in /var/log/.
 
 
-2-setup_a_domain_name: .TECH Domains is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
+**2-setup_a_domain_name:** .TECH Domains is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
 .TECH Domains worked with domain name registrars to give you access to a free domain name for a year. Please get the promo code in your tools space. Feel free to drop a thank you tweet for .TECH Domains.
 Provide the domain name in your answer file.
 Requirement:
@@ -44,7 +44,7 @@ configure your DNS records with an A entry so that your root domain points to yo
 go to your profile and enter your domain in the Project website url field.
 
 
-3-redirection: Readme:
+**3-redirection:** Readme:
 Replace a line with multiple lines with sed.
 Configure your Nginx server so that /redirect_me is redirecting to another page.
 Requirements:
@@ -53,14 +53,14 @@ You answer file should be a Bash script containing commands to automatically con
 Using what you did with 1-install_nginx_web_server, write 3-redirection so that it configures a brand new Ubuntu machine to the requirements asked in this task.
 
 
-4-not_found_page_404: Configure your Nginx server to have a custom 404 page that contains the string Ceci n'est pas une page.
+**4-not_found_page_404:** Configure your Nginx server to have a custom 404 page that contains the string Ceci n'est pas une page.
 Requirements:
 The page must return an HTTP 404 error code.
 The page must contain the string Ceci n'est pas une page.
 Using what you did with 3-redirection, write 4-not_found_page_404 so that it configures a brand new Ubuntu machine to the requirements asked in this task.
 
 
-7-puppet_install_nginx_web_server.pp: Time to practice configuring your server with Puppet! Just as you did before, we’d like you to install and configure an Nginx. server using Puppet instead of Bash. To save time and effort, you should also include resources in your manifest to perform a 301 redirect when querying /redirect_me.
+**7-puppet_install_nginx_web_server.pp:** Time to practice configuring your server with Puppet! Just as you did before, we’d like you to install and configure an Nginx. server using Puppet instead of Bash. To save time and effort, you should also include resources in your manifest to perform a 301 redirect when querying /redirect_me.
 Requirements:
 Nginx should be listening on port 80.
 When querying Nginx at its root / with a GET request (requesting a page) using curl, it must return a page that contains the string Hello World!
